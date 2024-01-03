@@ -99,7 +99,9 @@ const Form: React.FC = () => {
     <Formik
       initialValues={initialValues}
       onSubmit={onSubmit}
-      validationSchema={validationSchema}>
+      validationSchema={validationSchema}
+      validateOnBlur={false}
+      validateOnChange={false}>
       {({handleSubmit, setFieldValue, values, errors}) => (
         <Container>
           <Row>
